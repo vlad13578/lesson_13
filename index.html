@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zxx">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel="stylesheet" href="css/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="css/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Lesson 13</title>
     </head>
     <body>
@@ -12,99 +12,157 @@
             <header class="header"></header>
             <main class="main">
                 <div class="wrapper">
-                    <!-- Контент -->
+                    <div class="container">
+                        <div class="car">
+                            <div class="colour"></div>
+                            <div class="leftwheel">
+                                <div class="wheel"></div>
+                            </div>
+                            <div class="rightwheel">
+                                <div class="wheel"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="content">
                         <h1>CSS Transform</h1>
                         <div class="content__2D">
                             <section class="content__block">
                                 <h2>translate (x, y)</h2>
                                 <div class="content__translate">translate</div>
-                                <p><strong>translate</strong> - зрушує елемент на нове місце, переміщуючи відносно початкового положення об'єкта вправо і вниз, використовуючи координати X і Y. Записується таким чином translate (x,y);</p>
+                                <p>
+                                    <strong>translate</strong> - зрушує елемент на нове місце,
+                                    переміщуючи відносно початкового положення об'єкта вправо і
+                                    вниз, використовуючи координати X і Y. Записується таким
+                                    чином translate (x,y);
+                                </p>
                             </section>
                             <section class="content__block">
                                 <h2>scale (x, y)</h2>
-                                <div class="content__scale">
-                                    scale
-                                </div>
-                                <p><strong>scale</strong>- масштабує елементи, роблячи їх більшими або меншими. За замовчуванням значення вказані як одиниця (1) - це реальний розмір об'єкта. Перше значення масштабує елемент за шириною, друге - за висотою. Негативні значення відображають елемент дзеркально.</p>
+                                <div class="content__scale">scale</div>
+                                <p>
+                                    <strong>scale</strong>- масштабує елементи, роблячи їх
+                                    більшими або меншими. За замовчуванням значення вказані як
+                                    одиниця (1) - це реальний розмір об'єкта. Перше значення
+                                    масштабує елемент за шириною, друге - за висотою. Негативні
+                                    значення відображають елемент дзеркально.
+                                </p>
                             </section>
                             <section class="content__block">
-                                <h2>rotate (угол+deg)</h2>
-                                <div class="content__rotate">
-                                    rotate
-                                </div>
-                                <p><strong>rotate</strong> - повертає елементи на задану кількість градусів, негативні значення повертають елемент проти годинникової стрілки, позитивні - за годинниковою стрілкою. Записуються значення як градус повороту і deg</p>
+                                <h2>rotate (кут+deg)</h2>
+                                <div class="content__rotate">rotate</div>
+                                <p>
+                                    <strong>rotate</strong> - повертає елементи на задану
+                                    кількість градусів, негативні значення повертають елемент
+                                    проти годинникової стрілки, позитивні - за годинниковою
+                                    стрілкою. Записуються значення як градус повороту і deg
+                                </p>
                             </section>
                             <section class="content__block">
-                                <h2>skew (x-угол+deg, y-угол+deg)</h2>
-                                <div class="content__skew">
-                                    skew
-                                </div>
-                                <p><strong>skew</strong> - деформує (спотворює) сторони об'єкта щодо координатних осей. Якщо вказано одне значення, друге буде визначено браузером автоматично. Записуються значення як градус повороту та deg</p>
+                                <h2>skew (x-кут+deg, y-кут+deg)</h2>
+                                <div class="content__skew">skew</div>
+                                <p>
+                                    <strong>skew</strong> - деформує (спотворює) сторони
+                                    об'єкта щодо координатних осей. Якщо вказано одне значення,
+                                    друге буде визначено браузером автоматично. Записуються
+                                    значення як градус повороту та deg
+                                </p>
                             </section>
                             <section class="content__block">
                                 <h2>matrix (a, c, b, d, x, y)</h2>
-                                <div class="content__matrix">
-                                    matrix
-                                </div>
-                                <p><strong>matrix(a, c, b, d, x, y)</strong> - дає змогу об'єднати кілька функцій 2D-трансформацій в одній. Як трансформації допустимі поворот, масштабування, нахил (деформація) і зміна положення. Властивості вказуються без одиниць виміру.</p>
+                                <div class="content__matrix">matrix</div>
+                                <p>
+                                    <strong>matrix(a, c, b, d, x, y)</strong> - дає змогу
+                                    об'єднати кілька функцій 2D-трансформацій в одній. Як
+                                    трансформації допустимі поворот, масштабування, нахил
+                                    (деформація) і зміна положення. Властивості вказуються без
+                                    одиниць виміру.
+                                </p>
                             </section>
                             <section class="content__block">
                                 <h2>Множественные 2D трансформации</h2>
                                 <div class="content__multi">
-                                    translate <br> scale <br> rotate
+                                    translate <br />
+                                    scale <br />
+                                    rotate
                                 </div>
-                                <p>Так само, подібного можна домогтися, використовуючи множинні трансформації. А саме записати кілька значень в одну властивість transform.</p>
+                                <p>
+                                    Так само, подібного можна домогтися, використовуючи
+                                    множинні трансформації. А саме записати кілька значень в
+                                    одну властивість transform.
+                                </p>
                             </section>
                             <section class="content__block">
                                 <h2>transform-origin</h2>
-                                <div class="content__transform-origin">
-                                    transform origin
-                                </div>
-                                <p><strong>transform-origin</strong> - дає змогу змістити центр трансформації, щодо якого відбувається зміна положення/розміру/форми елемента</p>
+                                <div class="content__transform-origin">transform origin</div>
+                                <p>
+                                    <strong>transform-origin</strong> - дає змогу змістити
+                                    центр трансформації, щодо якого відбувається зміна
+                                    положення/розміру/форми елемента
+                                </p>
                             </section>
                         </div>
                         <div class="content__3D">
                             <section class="content__block">
                                 <h2>perspective, perspective-origin</h2>
                                 <div class="content__wrapper3d">
-                                    <div class="content__perspective">perspective, perspective-origin</div>
+                                    <div class="content__perspective">
+                                        perspective, perspective-origin
+                                    </div>
                                 </div>
-                                <p><strong>perspective, perspective-origin</strong> - встановлення глибини та зміна точки початку координат</p>
+                                <p>
+                                    <strong>perspective, perspective-origin</strong> -
+                                    встановлення глибини та зміна точки початку координат
+                                </p>
                             </section>
                             <section class="content__block">
                                 <h2>translate3d (x, y, z)</h2>
                                 <div class="content__wrapper3d">
                                     <div class="content__translate3D">translate3D</div>
                                 </div>
-                                <p><strong>translate3D</strong> - за аналогією зі своїм 2D братом це значення задає переміщення елемента, але в 3D-просторі. Крім осі X і Y додається вісь Z.</p>
+                                <p>
+                                    <strong>translate3D</strong> - за аналогією зі своїм 2D
+                                    братом це значення задає переміщення елемента, але в
+                                    3D-просторі. Крім осі X і Y додається вісь Z.
+                                </p>
                             </section>
                             <section class="content__block">
                                 <h2>scale3d (x, y, z)</h2>
                                 <div class="content__wrapper3d">
                                     <div class="content__scale3D">scale3D</div>
                                 </div>
-                                <p><strong>scale3D</strong> - задає тривимірне масштабування за однією з осей X, Y, Z</p>
+                                <p>
+                                    <strong>scale3D</strong> - задає тривимірне масштабування
+                                    за однією з осей X, Y, Z
+                                </p>
                             </section>
                             <section class="content__block">
                                 <h2>rotate3d (x, y, z, deg)</h2>
                                 <div class="content__wrapper3d">
                                     <div class="content__rotate3d">rotate3d</div>
                                 </div>
-                                <p><strong>rotate3d</strong> - обертає елемент відносно трьох осей. Елемент повертається під кутом, заданим останнім параметром відносно вектора напрямку X, Y, </p>
+                                <p>
+                                    <strong>rotate3d</strong> - обертає елемент відносно трьох
+                                    осей. Елемент повертається під кутом, заданим останнім
+                                    параметром відносно вектора напрямку X, Y,
+                                </p>
                             </section>
                             <section class="content__block">
                                 <h2>matrix3d (n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)</h2>
                                 <div class="content__wrapper3d">
                                     <div class="content__matrix3d">matrix3d</div>
                                 </div>
-                                <p><strong>matrix3d</strong> - задає тривимірне перетворення як однорідну матрицю розміром 4×4 із шістнадцятьма значеннями в стовпцях</p>
+                                <p>
+                                    <strong>matrix3d</strong> - задає тривимірне перетворення
+                                    як однорідну матрицю розміром 4×4 із шістнадцятьма
+                                    значеннями в стовпцях
+                                </p>
                             </section>
                             <section class="content__block">
                                 <h2>Множинні 3D трансформації</h2>
                                 <div class="content__wrapper3d">
                                     <div class="content__multi3d">
-                                        translate3d <br> rotate3d
+                                        translate3d <br />
+                                        rotate3d
                                     </div>
                                 </div>
                                 <p>Запис кількох 3D-значень в одну властивість transform.</p>
@@ -112,23 +170,28 @@
                             <section class="content__block">
                                 <h2>transform-style</h2>
                                 <div class="content__transform-style-wrapper">
-                                    <div class="content__transform-style">transform <br> style</div>
+                                    <div class="content__transform-style">
+                                        transform <br />
+                                        style
+                                    </div>
                                 </div>
-                                <p><strong>transform-style</strong> - задає стиль трансформації</p>
+                                <p>
+                                    <strong>transform-style</strong> - задає стиль
+                                    трансформації
+                                </p>
                             </section>
                             <section class="content__block">
                                 <h2>Backface-visibility</h2>
                                 <div class="flip">
                                     <div class="flip__body">
-                                        <div class="flip__front">
-                                            FONT
-                                        </div>
-                                        <div class="flip__back">
-                                            BACK
-                                        </div>
+                                        <div class="flip__front">FONT</div>
+                                        <div class="flip__back">BACK</div>
                                     </div>
                                 </div>
-                                <p>Властивість визначає, чи буде видно користувачеві зворотний бік елемента.</p>
+                                <p>
+                                    Властивість визначає, чи буде видно користувачеві зворотний
+                                    бік елемента.
+                                </p>
                             </section>
                         </div>
                     </div>
